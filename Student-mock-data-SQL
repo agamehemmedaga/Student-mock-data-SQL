@@ -1,0 +1,21 @@
+DROP TABLE IF EXISTS students CASCADE;
+CREATE TABLE students(
+    id SERIAL PRIMARY KEY ,
+    fullname VARCHAR (100) NOT NULL ,
+    email VARCHAR (100) UNIQUE NOT NULL
+);
+INSERT INTO students (fullname, email) VALUES
+                                           ('Zeyeb Mahmudova' , 'zeyneb@gamil.com'),
+                                           ('Aga Mehemmed' , 'agamehemmedaga@gmail.com'),
+                                           ('Ismayil Agayev' , 'ismail@gmail.com'),
+                                           ('Ramin Eliyev' , 'ramin@gmail.com'),
+                                           ('Naib Asadov' , 'naib@gamil.com'),
+                                           ('Ali Zeynalov' , 'ali@gmail.com'),
+                                           ('Hesen Velizade', 'hesen@gmail.com'),
+                                           ('Kemale Elizade', 'kemale@gmail.com'),
+                                           ('Cesur Ehmedov', 'cesur@gmail.com'),
+                                           ('Yasar Yusufzade', 'yasar@gmail.com'),
+                                           ('Esref Xelilov ' , 'esref@gmail.com');
+
+SELECT *FROM students;
+
